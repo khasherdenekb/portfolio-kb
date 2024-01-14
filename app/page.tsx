@@ -1,51 +1,45 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import Location from "@/components/main/column-1/location";
+import Mode from "@/components/main/column-1/mode";
+import Projects from "@/components/main/column-1/projects";
+import Stacks from "@/components/main/column-1/stacks";
+import About from "@/components/main/column-2/about";
+import Awards from "@/components/main/column-2/awards";
+import GetInTouch from "@/components/main/column-2/getInTouch";
+import CV from "@/components/main/column-3/cv";
+import Educations from "@/components/main/column-3/education";
+import Experiences from "@/components/main/column-3/experience";
+import YearsOfExperience from "@/components/main/column-3/yearsOfExperience";
 
-export default function Home() {
-	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
-				<br />
-				<h1 className={title()}>
-					websites regardless of your design experience.
-				</h1>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
-				</h2>
-			</div>
+const Home = () => {
+  return (
+    <section className="grid grid-cols-6 gap-5">
+      {/* Left column */}
+      <div className="col-span-2 flex flex-col gap-y-5">
+        <div className="grid grid-cols-2 gap-5">
+          <Location />
+          <Mode />
+        </div>
+        <Projects />
+        <Stacks />
+      </div>
 
-			<div className="flex gap-3">
-				<Link
-					isExternal
-					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-				>
-					Documentation
-				</Link>
-				<Link
-					isExternal
-					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
-				>
-					<GithubIcon size={20} />
-					GitHub
-				</Link>
-			</div>
+      {/* Middle column */}
+      <div className="flex flex-col gap-y-5 col-span-2">
+        <About />
+        <GetInTouch />
+        <Awards />
+      </div>
 
-			<div className="mt-8">
-				<Snippet hideSymbol hideCopyButton variant="flat">
-					<span>
-						Get started by editing <Code color="primary">app/page.tsx</Code>
-					</span>
-				</Snippet>
-			</div>
-		</section>
-	);
-}
+      {/* Right column */}
+      <div className="col-span-2 flex flex-col gap-y-5">
+        <Educations />
+        <Experiences />
+        <div className="grid grid-cols-2 gap-5">
+          <YearsOfExperience />
+          <CV />
+        </div>
+      </div>
+    </section>
+  );
+};
+export default Home;
