@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html className="" lang="en" suppressHydrationWarning>
       <head />
       <body
         className={clsx(
@@ -41,7 +41,7 @@ export default function RootLayout({
             enableSystem: true,
           }}
         >
-          <main className="container  py-6 mx-auto max-w-6xl 2xl:max-w-7xl">
+          <main className="container  py-6 mx-auto max-w-6xl 2xl:max-w-7xl xs-device">
             <Navbar />
             {children}
             <Footer />

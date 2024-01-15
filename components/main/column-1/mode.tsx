@@ -8,7 +8,7 @@ export default function Mode() {
   return (
     <Card className=" col-span-1 small-card">
       <CardHeader className="flex justify-between w-full">
-        <p className="text-xs">Mode</p>
+        <p className="small-text">Mode</p>
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -18,7 +18,9 @@ export default function Mode() {
         <Divider className="w-[96%]" />
       </div>
       <CardBody className="flex justify-end flex-col">
-        <p className="text-xs pb-3 leading-normal">{modeConfig?.description}</p>
+        <p className="small-text pb-3 leading-normal">
+          {modeConfig?.description}
+        </p>
         <Button
           size="sm"
           className="w-full flex justify-between"

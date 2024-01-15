@@ -6,7 +6,7 @@ export default function YearsOfExperience() {
   return (
     <Card className=" col-span-1 h-[165pxs]">
       <CardHeader className="flex justify-between w-full">
-        <p className="text-xs">Years of experience</p>
+        <p className="small-text">Years of experience</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />

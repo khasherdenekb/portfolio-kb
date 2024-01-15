@@ -12,12 +12,12 @@ const Projects = () => {
   return (
     <Card className="col-span-2 long-card">
       <CardHeader>
-        <p className="text-xs">Projects</p>
+        <p className="small-text">Projects</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />
       </div>
-      <CardBody className="text-xs py-5 flex flex-col justify-end leading-normal">
+      <CardBody className="small-text py-5 flex flex-col justify-end leading-normal">
         <ScrollShadow className="flex flex-col gap-6">
           {projectConfig?.map((project, key) => (
             <Project project={project} key={key} />

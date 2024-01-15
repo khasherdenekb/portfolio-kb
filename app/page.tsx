@@ -12,7 +12,7 @@ import YearsOfExperience from "@/components/main/column-3/yearsOfExperience";
 
 const Home = () => {
   return (
-    <section className="grid grid-cols-6 gap-5">
+    <section className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5">
       {/* Left column */}
       <div className="col-span-2 flex flex-col gap-y-5">
         <div className="grid grid-cols-2 gap-5">
@@ -31,7 +31,7 @@ const Home = () => {
       </div>
 
       {/* Right column */}
-      <div className="col-span-2 flex flex-col gap-y-5">
+      <div className="md:col-span-4 lg:col-span-2 col-span-2 flex flex-col gap-y-5">
         <Educations />
         <Experiences />
         <div className="grid grid-cols-2 gap-5">

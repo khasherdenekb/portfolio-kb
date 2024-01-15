@@ -11,12 +11,12 @@ const About = () => {
   return (
     <Card className="small-card">
       <CardHeader>
-        <p className="text-xs">About</p>
+        <p className="small-text">About</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />
       </div>
-      <CardBody className="text-xs pt-5 flex flex-col justify-end leading-normal">
+      <CardBody className="small-text pt-5 flex flex-col justify-end leading-normal">
         <ScrollShadow>{aboutConfig?.description}</ScrollShadow>
       </CardBody>
     </Card>

@@ -12,7 +12,7 @@ const GetInTouch = () => {
   return (
     <Card className=" small-card">
       <CardHeader>
-        <p className="text-xs">Get in touch</p>
+        <p className="small-text">Get in touch</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />

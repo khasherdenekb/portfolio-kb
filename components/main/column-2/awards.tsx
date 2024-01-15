@@ -17,12 +17,12 @@ const Awards = () => {
   return (
     <Card className=" long-card">
       <CardHeader>
-        <p className="text-xs">Awards</p>
+        <p className="small-text">Awards</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />
       </div>
-      <CardBody className="text-xs py-5 flex flex-col justify-end leading-normal">
+      <CardBody className="small-text py-5 flex flex-col justify-end leading-normal">
         <ScrollShadow className="flex gap-5 flex-col">
           {awardConfig?.map((award, key) => (
             <Award award={award} key={key} />

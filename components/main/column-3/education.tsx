@@ -12,12 +12,12 @@ const Educations = () => {
   return (
     <Card className=" col-span-2  long-card">
       <CardHeader>
-        <p className="text-xs">Educations & Certificates</p>
+        <p className="text-[10px] 2xl:text-xs">Educations & Certificates</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />
       </div>
-      <CardBody className="text-xs py-5 flex flex-col justify-end leading-normal">
+      <CardBody className="text-[10px] 2xl:text-xs py-5 flex flex-col justify-end leading-normal">
         <ScrollShadow className="flex gap-5 flex-col">
           {educationConfig?.map((education) => (
             <Education education={education} />

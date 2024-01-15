@@ -74,9 +74,18 @@
     @apply bg-background text-foreground;
   }
   .small-card {
-    @apply h-[165px] 2xl:h-[180px];
+    @apply lg:h-[165px] 2xl:h-[180px] h-[155px] md:h-[175px];
   }
   .long-card {
-    @apply h-[245px] 2xl:h-[300px];
+    @apply lg:h-[245px] 2xl:h-[300px] h-[365px] md:h-[360px];
+  }
+  .small-text {
+    @apply 2xl:text-xs  text-[8px] md:text-[10px];
+  }
+}
+
+@media (max-width: 340px) {
+  .xs-device {
+    @apply hidden;
   }
 }

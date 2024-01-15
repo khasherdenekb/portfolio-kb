@@ -8,7 +8,7 @@ export default function CV() {
   return (
     <Card className=" col-span-1 small-card">
       <CardHeader>
-        <p className="text-xs">CV</p>
+        <p className="small-text">CV</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />

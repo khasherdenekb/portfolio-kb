@@ -15,14 +15,14 @@ type ExperienceProp = {
 
 const Experiences = () => {
   return (
-    <Card className="small-card ">
+    <Card className="small-card">
       <CardHeader>
-        <p className="text-xs">Work experience</p>
+        <p className="small-text">Work experience</p>
       </CardHeader>
       <div className="flex justify-center">
         <Divider className="w-[96%]" />
       </div>
-      <CardBody className="text-xs py-5 flex flex-col justify-end leading-normal">
+      <CardBody className="small-text py-5 flex flex-col justify-end leading-normal">
         <ScrollShadow className="flex gap-5 flex-col">
           {workExperienceConfig?.map((experience) => (
             <Experience experience={experience} />
