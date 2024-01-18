@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-import Navbar from "@/components/navbar/Navbar";
 import clsx from "clsx";
 import Footer from "@/components/footer/footer";
 
