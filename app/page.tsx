@@ -1,5 +1,5 @@
-import Location from "@/components/main/column-1/location";
 import Mode from "@/components/main/column-1/mode";
+import Profile from "@/components/main/column-1/profile";
 import Projects from "@/components/main/column-1/projects";
 import Stacks from "@/components/main/column-1/stacks";
 import About from "@/components/main/column-2/about";
@@ -16,7 +16,7 @@ const Home = () => {
       {/* Left column */}
       <div className="col-span-2 flex flex-col gap-y-5">
         <div className="grid grid-cols-2 gap-5">
-          <Location />
+          <Profile />
           <Mode />
         </div>
         <Projects />

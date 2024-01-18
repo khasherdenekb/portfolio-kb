@@ -42,7 +42,7 @@ export default function RootLayout({
           }}
         >
           <main className="container  py-6 mx-auto max-w-6xl 2xl:max-w-7xl xs-device">
-            <Navbar />
+            {/* <Navbar /> */}
             {children}
             <Footer />
           </main>
