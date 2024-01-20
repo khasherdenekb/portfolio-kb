@@ -5,6 +5,7 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import Footer from "@/components/footer/footer";
+import previewImg from "@/public/assets/project-overview.png";
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "public/assets/project-overview.png",
+        url: previewImg.src,
         width: 1200,
         height: 630,
         alt: "projectBg",
@@ -42,7 +43,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         >
           <main className="container  py-6 mx-auto max-w-6xl 2xl:max-w-7xl xs-device">
-            {/* <Navbar /> */}
             {children}
             <Footer />
           </main>
