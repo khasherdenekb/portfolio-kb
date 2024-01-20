@@ -1,11 +1,5 @@
 import { aboutConfig } from "@/config/main/column-2/column2Config";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Divider,
-  ScrollShadow,
-} from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Divider, ScrollShadow } from "@nextui-org/react";
 
 const About = () => {
   return (

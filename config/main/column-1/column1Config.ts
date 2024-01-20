@@ -6,12 +6,17 @@ export const projectConfig = [
   },
   {
     image: "/logo.jpg",
-    name: "Arnyx",
+    name: "Eleutheria",
     description: "Ecommerce website",
   },
   {
     image: "/logo.jpg",
-    name: "Arnyx",
+    name: "Meta728",
     description: "Ecommerce website",
   },
 ];
+
+export const profileConfig = {
+  name: "Khash-Erdene 'B",
+  profession: "Software Engineer",
+};

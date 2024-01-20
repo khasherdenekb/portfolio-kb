@@ -1,3 +1,4 @@
+"use client";
 import { projectConfig } from "@/config/main/column-1/column1Config";
 import { Card, CardBody, CardHeader, Divider, Image } from "@nextui-org/react";
 import { ScrollShadow } from "@nextui-org/react";
@@ -5,7 +6,6 @@ import { FC } from "react";
 
 type ProjectProps = {
   project: (typeof projectConfig)[number];
-  key: number;
 };
 
 const Projects = () => {
@@ -19,8 +19,8 @@ const Projects = () => {
       </div>
       <CardBody className="small-text py-5 flex flex-col justify-end leading-normal">
         <ScrollShadow className="flex flex-col gap-6">
-          {projectConfig?.map((project, key) => (
-            <Project project={project} key={key} />
+          {projectConfig?.map((project) => (
+            <Project project={project} />
           ))}
         </ScrollShadow>
       </CardBody>
@@ -28,11 +28,11 @@ const Projects = () => {
   );
 };
 
-const Project: FC<ProjectProps> = ({ project, key }) => {
+const Project: FC<ProjectProps> = ({ project }) => {
   const { name, description, image } = project;
 
   return (
-    <div key={key} className="flex gap-6 flex-col">
+    <div key={name} className="flex gap-6 flex-col">
       <div className="flex gap-5">
         <Image src={image} alt={name} width={40} height={40} />
         <div className="flex flex-col">
