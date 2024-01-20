@@ -6,7 +6,6 @@ import { FC } from "react";
 
 type StackProps = {
   stack: (typeof stackConfig)[number];
-  key: number;
 };
 
 const Stacks = () => {
@@ -20,8 +19,8 @@ const Stacks = () => {
       </div>
       <CardBody className="small-text py-5 flex flex-col justify-end leading-normal">
         <ScrollShadow className="flex  gap-4 flex-wrap">
-          {stackConfig?.map((stack, index) => (
-            <Stack stack={stack} key={index} />
+          {stackConfig?.map((stack) => (
+            <Stack stack={stack} />
           ))}
         </ScrollShadow>
       </CardBody>
@@ -32,13 +31,7 @@ const Stacks = () => {
 const Stack: FC<StackProps> = ({ stack }) => {
   const { icon, name } = stack;
   return (
-    <Button
-      onClick={() => console.log(name)}
-      key={name}
-      isIconOnly
-      variant="flat"
-      className="2xl:h-14 2xl:w-14"
-    >
+    <Button key={name} isIconOnly variant="flat" className="2xl:h-14 2xl:w-14">
       {icon}
     </Button>
   );
