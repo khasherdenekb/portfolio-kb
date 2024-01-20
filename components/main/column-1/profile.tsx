@@ -21,7 +21,7 @@ export default function Profile() {
           <Avatar size="sm" src="/assets/profile.jpg" />
           <div className="flex flex-col ">
             <p className="small-text flex items-center gap-1">
-              Khash-Erdene &apos;B{" "}
+              Khash-Erdene &apos;B
               <Verified className="w-3 h-3 stroke-black fill-yellow-400 2xl:w-4 2xl:h-4" />
             </p>
             <p className="small-text">Software Engineer</p>
