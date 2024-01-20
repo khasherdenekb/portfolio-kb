@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-<img width="1440" alt="project-overview" src="/assets/project-overview.png">
+<img width="1440" alt="project-overview" src="public/assets/project-overview.png">
 
 ## Technologies Used
 
