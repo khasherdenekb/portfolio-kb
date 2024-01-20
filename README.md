@@ -1,11 +1,15 @@
 ## Portfolio V2
 
+## Project Overview
+<img width="1440" alt="project-overview" src="https://github.com/khasherdenekb/portfolio-kb/assets/98733664/c78d551f-4a59-429b-aeeb-a1f0982f0122">
+
 ## Technologies Used
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+- [Next.js 14]
+- [NextUI v2]
+- [Tailwind CSS]
+- [Tailwind Variants]
+- [TypeScript]
+- [Framer Motion]
+- [next-themes]
+- [bun.js]
