@@ -6,11 +6,11 @@ import { useTheme } from "next-themes";
 
 import { Button } from "@nextui-org/button";
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   return (
     <Button isIconOnly size="lg">
-      {theme === "light" ? (
+      {resolvedTheme === "light" ? (
         <Sun onClick={() => setTheme("dark")} />
       ) : (
         <Moon onClick={() => setTheme("light")} />

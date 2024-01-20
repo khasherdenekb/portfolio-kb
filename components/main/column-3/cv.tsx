@@ -24,14 +24,16 @@ export default function CV() {
             View
           </Button>
         </Link>
-        <Button
-          size="sm"
-          className="w-full flex justify-between"
-          endContent={<MoveDown className="h-3 w-3" />}
-          variant="flat"
-        >
-          Download
-        </Button>
+        <Link href={cvConfig?.link} target="_blank">
+          <Button
+            size="sm"
+            className="w-full flex justify-between"
+            endContent={<MoveDown className="h-3 w-3" />}
+            variant="flat"
+          >
+            Download
+          </Button>
+        </Link>
       </CardBody>
     </Card>
   );

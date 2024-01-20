@@ -17,9 +17,9 @@ export default function Profile() {
       </div>
       <CardBody className="flex justify-end">
         <div className="flex gap-2 z-10">
-          <Avatar size="sm" src="https://i.redd.it/4bntpcgrzuv81.jpg" />
+          <Avatar size="sm" src="/assets/profile.jpg" />
           <div className="flex flex-col ">
-            <p className="small-text">Khash-Erdene 'B</p>
+            <p className="small-text">Khash-Erdene &apos;B</p>
             <p className="small-text">Software Engineer</p>
           </div>
         </div>

@@ -1,12 +1,6 @@
 "use client";
 import { workExperienceConfig } from "@/config/main/column-3/column3Config";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Divider,
-  ScrollShadow,
-} from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Divider, ScrollShadow } from "@nextui-org/react";
 import { FC } from "react";
 
 type ExperienceProp = {

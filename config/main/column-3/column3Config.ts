@@ -45,5 +45,5 @@ export const yearsOfExperienceConfig = {
 };
 
 export const cvConfig = {
-  link: "",
+  link: "https://www.linkedin.com/in/khasherdenekb/",
 };

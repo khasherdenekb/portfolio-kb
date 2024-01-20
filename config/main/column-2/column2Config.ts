@@ -2,8 +2,7 @@ export const awardConfig = [
   {
     year: "2023",
     name: "Mandal asset hackathon dilemma game - 4th place",
-    description:
-      "The second team hackathon we try to focus on the improve performance.",
+    description: "The second team hackathon we try to focus on the improve performance.",
   },
   {
     year: "2023",
@@ -20,12 +19,11 @@ export const awardConfig = [
   {
     year: "2023",
     name: "Mandakh university IT olympiad - 4th place",
-    description:
-      "I achieved 4th place in the Mandakh university Information technology olympiad",
+    description: "I achieved 4th place in the Mandakh university Information technology olympiad",
   },
 ];
 
 export const aboutConfig = {
   description:
-    "Hi there, 👋🏻 I'm Khash-Erdene, my profession is fullstack web and mobile software developer and engineer, also working on some software development projects. Day by day, I'm learning and improving myself. I'm passionate about software development and technologies. I'm looking forward to getting to work on new exciting and challenging projects.",
+    "Hi there, 👋🏻 I'm Khash-Erdene, Since childhood, my fascination with technology has been a driving force in my life. Growing up in Ulaanbaatar, Mongolia, I developed a profound love for all things related to software engineering, mobile, and web development. I started coding in the year 2021, and ever since, it has been a thrilling adventure of turning ideas into functional and innovative solutions. As a software engineer and a versatile developer, I find joy in the dynamic world of technology, constantly exploring new tools, languages, and frameworks to stay at the forefront of the ever-evolving digital landscape. My passion for coding is not just a profession but a lifelong commitment to mastering the art of programming and contributing to the exciting advancements shaping our technological future.",
 };

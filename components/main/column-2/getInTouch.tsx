@@ -6,6 +6,7 @@ import Link from "next/link";
 
 type GetInTouchProps = {
   social: (typeof getInTouchConfig)[number];
+  key: number;
 };
 
 const GetInTouch = () => {
@@ -18,18 +19,18 @@ const GetInTouch = () => {
         <Divider className="w-[96%]" />
       </div>
       <CardBody className="flex justify-evenly flex-row items-center">
-        {getInTouchConfig?.map((social) => (
-          <SocialButtons social={social} />
+        {getInTouchConfig?.map((social, key) => (
+          <SocialButtons social={social} key={key} />
         ))}
       </CardBody>
     </Card>
   );
 };
 
-const SocialButtons: FC<GetInTouchProps> = ({ social }) => {
+const SocialButtons: FC<GetInTouchProps> = ({ social, key }) => {
   const { icon, link } = social;
   return (
-    <Link href={link} target="_blank">
+    <Link href={link} target="_blank" key={key}>
       <Button isIconOnly size="lg">
         {icon}
       </Button>
