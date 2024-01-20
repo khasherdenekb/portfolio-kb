@@ -18,8 +18,6 @@ export const metadata: Metadata = {
     apple: "/logo.jpg",
   },
   openGraph: {
-    type: "website",
-    url: "https://khasherdene.vercel.app",
     images: [
       {
         url: "/assets/project-overview",

@@ -31,7 +31,7 @@ const Stacks = () => {
 const Stack: FC<StackProps> = ({ stack }) => {
   const { icon, name } = stack;
   return (
-    <Button key={name} isIconOnly variant="flat" className="2xl:h-14 2xl:w-14">
+    <Button id={name} key={name} isIconOnly variant="flat" className="2xl:h-14 2xl:w-14">
       {icon}
     </Button>
   );

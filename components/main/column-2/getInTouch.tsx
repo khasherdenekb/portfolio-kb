@@ -30,7 +30,7 @@ const GetInTouch = () => {
 const SocialButtons: FC<GetInTouchProps> = ({ social, key }) => {
   const { icon, link } = social;
   return (
-    <Link href={link} target="_blank" key={key}>
+    <Link href={link} target="_blank" key={key} aria-label="social media icon" id={key?.toString()}>
       <Button isIconOnly size="lg">
         {icon}
       </Button>

@@ -14,22 +14,24 @@ export default function CV() {
         <Divider className="w-[96%]" />
       </div>
       <CardBody className="flex justify-end flex-col gap-3">
-        <Link href={cvConfig?.link} target="_blank">
+        <Link href={cvConfig?.link} target="_blank" aria-label="viewCv">
           <Button
             size="sm"
             className="w-full flex justify-between"
             endContent={<MoveUpRight className="h-3 w-3" />}
             variant="flat"
+            id="downloadCv"
           >
             View
           </Button>
         </Link>
-        <Link href={cvConfig?.link} target="_blank">
+        <Link href={cvConfig?.link} target="_blank" aria-label="downloadCv">
           <Button
             size="sm"
             className="w-full flex justify-between"
             endContent={<MoveDown className="h-3 w-3" />}
             variant="flat"
+            id="downloadCv"
           >
             Download
           </Button>

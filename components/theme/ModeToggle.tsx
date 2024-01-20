@@ -9,7 +9,7 @@ export function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
 
   return (
-    <Button isIconOnly size="lg">
+    <Button id="themeSwitch" isIconOnly size="lg">
       {resolvedTheme === "light" ? (
         <Sun onClick={() => setTheme("dark")} />
       ) : (
