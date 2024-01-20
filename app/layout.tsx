@@ -18,16 +18,7 @@ export const metadata: Metadata = {
     shortcut: "/logo.jpg",
     apple: "/logo.jpg",
   },
-  openGraph: {
-    images: [
-      {
-        url: previewImg.src,
-        width: 1200,
-        height: 630,
-        alt: "projectBg",
-      },
-    ],
-  },
+  metadataBase: new URL(previewImg?.src),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
