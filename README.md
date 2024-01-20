@@ -5,11 +5,12 @@
 
 ## Technologies Used
 
-- [Next.js 14]
-- [NextUI v2]
-- [Tailwind CSS]
-- [Tailwind Variants]
-- [TypeScript]
-- [Framer Motion]
-- [next-themes]
-- [bun.js]
+- Next.js 14
+- NextUI v2
+- Tailwind CSS
+- TypeScript
+- Framer Motion
+- next-themes
+- Bun.js
+- React icons
+- Lucide icons
