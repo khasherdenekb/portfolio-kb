@@ -1,7 +1,8 @@
 ## Portfolio V2
 
 ## Project Overview
-<img width="1440" alt="project-overview" src="https://github.com/khasherdenekb/portfolio-kb/assets/98733664/c78d551f-4a59-429b-aeeb-a1f0982f0122">
+
+<img width="1440" alt="project-overview" src="/assets/project-overview">
 
 ## Technologies Used
 

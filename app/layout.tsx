@@ -17,6 +17,16 @@ export const metadata: Metadata = {
     shortcut: "/logo.jpg",
     apple: "/logo.jpg",
   },
+  openGraph: {
+    type: "website",
+    url: "https://khasherdene.vercel.app",
+    images: {
+      url: "/assets/project-overview",
+      width: 1200,
+      height: 630,
+      alt: "projectBg",
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
