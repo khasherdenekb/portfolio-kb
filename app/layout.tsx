@@ -20,12 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://khasherdene.vercel.app",
-    images: {
-      url: "/assets/project-overview",
-      width: 1200,
-      height: 630,
-      alt: "projectBg",
-    },
+    images: [
+      {
+        url: "/assets/project-overview",
+        width: 1200,
+        height: 630,
+        alt: "projectBg",
+      },
+    ],
   },
 };
 
