@@ -5,7 +5,6 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import Footer from "@/components/footer/footer";
-import previewImg from "@/public/assets/project-overview.png";
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: previewImg.src,
+        url: "public/assets/project-overview.png",
         width: 1200,
         height: 630,
         alt: "projectBg",
