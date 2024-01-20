@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Avatar, Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
+import { Verified } from "lucide-react";
 
 export default function Profile() {
   return (
@@ -19,7 +20,10 @@ export default function Profile() {
         <div className="flex gap-2 z-10">
           <Avatar size="sm" src="/assets/profile.jpg" />
           <div className="flex flex-col ">
-            <p className="small-text">Khash-Erdene &apos;B</p>
+            <p className="small-text flex items-center gap-1">
+              Khash-Erdene &apos;B{" "}
+              <Verified className="w-3 h-3 stroke-black fill-yellow-400 2xl:w-4 2xl:h-4" />
+            </p>
             <p className="small-text">Software Engineer</p>
           </div>
         </div>
