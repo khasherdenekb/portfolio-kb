@@ -1,19 +1,18 @@
 import React from "react";
-import { Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { yearsOfExperienceConfig } from "@/config/main/column-3/column3Config";
+import { Separator } from "@/components/ui/separator";
 
 export default function YearsOfExperience() {
   return (
-    <Card className=" col-span-1 h-[165pxs]">
-      <CardHeader className="flex justify-between w-full">
+    <Card className="col-span-1 small-card">
+      <CardHeader className="flex justify-between w-full ">
         <p className="small-text">Years of experience</p>
+        <Separator />
       </CardHeader>
-      <div className="flex justify-center">
-        <Divider className="w-[96%]" />
-      </div>
-      <CardBody className="flex justify-center items-center">
-        <p className="text-8xl">{yearsOfExperienceConfig.year}</p>
-      </CardBody>
+      <CardContent className="flex justify-center items-center h-[60%] ">
+        <p className="text-8xl 4xl:text-[7rem]">{yearsOfExperienceConfig.year}</p>
+      </CardContent>
     </Card>
   );
 }

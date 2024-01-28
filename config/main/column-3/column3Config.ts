@@ -34,7 +34,7 @@ export const educationConfig = [
 
 export const workExperienceConfig = [
   {
-    year: "2023 - Present",
+    year: "2023 - Now",
     name: "Arig Bank",
     description: "Software developer",
   },

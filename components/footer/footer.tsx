@@ -1,12 +1,10 @@
-import { Divider } from "@nextui-org/react";
+import { Separator } from "../ui/separator";
 
 const Footer = () => {
   return (
     <footer className="pt-5">
-      <Divider />
-      <p className="small-text text-gray-500 pt-4">
-        © 2024 Khash-Erdene Bolor-Erdene. All rights reserved.
-      </p>
+      <Separator />
+      <p className="small-text text-gray-500 pt-4">© 2024 Khash-Erdene Bolor-Erdene. All rights reserved.</p>
     </footer>
   );
 };

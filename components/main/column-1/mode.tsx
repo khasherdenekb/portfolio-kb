@@ -1,18 +1,19 @@
 import { ModeToggle } from "@/components/theme/ModeToggle";
-import { Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const Mode = () => {
   return (
-    <Card className=" col-span-1 small-card">
-      <CardHeader>
-        <p className="small-text">Mode</p>
-      </CardHeader>
-      <div className="flex justify-center">
-        <Divider className="w-[96%]" />
+    <Card className="col-span-1 small-card">
+      <div>
+        <CardHeader>
+          <p className="small-text">Mode</p>
+          <Separator className="w-[96%]" />
+        </CardHeader>
       </div>
-      <CardBody className="flex justify-center items-center">
+      <CardContent className="flex w-full  items-center h-[60%]   justify-center">
         <ModeToggle />
-      </CardBody>
+      </CardContent>
     </Card>
   );
 };

@@ -1,8 +1,10 @@
 "use client";
 import { projectConfig } from "@/config/main/column-1/column1Config";
-import { Card, CardBody, CardHeader, Divider, Image } from "@nextui-org/react";
-import { ScrollShadow } from "@nextui-org/react";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { FC } from "react";
+import Image from "next/image";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 type ProjectProps = {
   project: (typeof projectConfig)[number];
@@ -10,20 +12,18 @@ type ProjectProps = {
 
 const Projects = () => {
   return (
-    <Card className="col-span-2 long-card">
+    <Card className="col-span-2 long-card flex justify-between flex-col">
       <CardHeader>
         <p className="small-text">Projects</p>
+        <Separator />
       </CardHeader>
-      <div className="flex justify-center">
-        <Divider className="w-[96%]" />
-      </div>
-      <CardBody className="small-text py-5 flex flex-col justify-end leading-normal">
-        <ScrollShadow className="flex flex-col gap-6">
+      <ScrollArea className="h-auto">
+        <CardContent className="small-text flex flex-col  leading-normal gap-3">
           {projectConfig?.map((project) => (
             <Project project={project} />
           ))}
-        </ScrollShadow>
-      </CardBody>
+        </CardContent>
+      </ScrollArea>
     </Card>
   );
 };

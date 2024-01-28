@@ -1,7 +1,9 @@
 "use client";
 import { awardConfig } from "@/config/main/column-2/column2Config";
-import { Card, CardBody, CardHeader, Divider, ScrollShadow } from "@nextui-org/react";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { FC } from "react";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 type AwardProps = {
   award: (typeof awardConfig)[number];
@@ -9,20 +11,18 @@ type AwardProps = {
 
 const Awards = () => {
   return (
-    <Card className=" long-card">
+    <Card className="long-card flex justify-between flex-col">
       <CardHeader>
         <p className="small-text">Awards</p>
+        <Separator />
       </CardHeader>
-      <div className="flex justify-center">
-        <Divider className="w-[96%]" />
-      </div>
-      <CardBody className="small-text py-5 flex flex-col justify-end leading-normal">
-        <ScrollShadow className="flex gap-5 flex-col">
+      <ScrollArea className="h-full">
+        <CardContent className="small-text py-5 flex flex-col justify-end leading-normal gap-3">
           {awardConfig?.map((award) => (
             <Award award={award} />
           ))}
-        </ScrollShadow>
-      </CardBody>
+        </CardContent>
+      </ScrollArea>
     </Card>
   );
 };
@@ -30,7 +30,7 @@ const Awards = () => {
 const Award: FC<AwardProps> = ({ award }) => {
   const { name, description, year } = award;
   return (
-    <div key={name} className="flex items-start gap-6">
+    <div key={name} className="flex gap-6">
       <p className="text-gray-500">{year}</p>
       <div className="flex flex-col">
         <p>{name}</p>

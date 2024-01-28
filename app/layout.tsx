@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html className="" lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head />
       <body className={clsx("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <Providers
@@ -42,7 +42,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             enableSystem: true,
           }}
         >
-          <main className="container  py-6 mx-auto max-w-6xl 2xl:max-w-7xl xs-device">
+          <main
+            className="container relative h-full w-full  py-6 mx-auto max-w-[74rem] 2xl:max-w-[84rem]  xs-device 4xl:max-w-[100rem] xs:hidden
+          "
+          >
             {children}
             <Footer />
           </main>

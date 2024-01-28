@@ -1,8 +1,10 @@
 "use client";
-import { Button, Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { getInTouchConfig } from "@/config/main/column-2/icons";
 import { FC } from "react";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 type GetInTouchProps = {
   social: (typeof getInTouchConfig)[number];
@@ -13,15 +15,13 @@ const GetInTouch = () => {
     <Card className=" small-card">
       <CardHeader>
         <p className="small-text">Get in touch</p>
+        <Separator />
       </CardHeader>
-      <div className="flex justify-center">
-        <Divider className="w-[96%]" />
-      </div>
-      <CardBody className="flex justify-evenly flex-row items-center">
+      <CardContent className="flex w-full  items-center h-[60%]  gap-8 justify-center">
         {getInTouchConfig?.map((social) => (
           <SocialButtons social={social} />
         ))}
-      </CardBody>
+      </CardContent>
     </Card>
   );
 };
@@ -30,8 +30,8 @@ const SocialButtons: FC<GetInTouchProps> = ({ social }) => {
   const { icon, link, name } = social;
   return (
     <Link href={link} target="_blank" key={name} aria-label="social media icon" id={name}>
-      <Button isIconOnly size="lg">
-        {icon}
+      <Button className="2xl:h-12 2xl:w-12 h-11 w-11 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16">
+        <span>{icon}</span>
       </Button>
     </Link>
   );
