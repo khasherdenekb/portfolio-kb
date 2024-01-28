@@ -31,7 +31,7 @@ const Stacks = () => {
 const Stack: FC<StackProps> = ({ stack }) => {
   const { icon, name } = stack;
   return (
-    <Button id={name} key={name} className="relative 2xl:h-11 2xl:w-11 h-8 w-8">
+    <Button aria-label={name} key={name} className="relative 2xl:h-11 2xl:w-11 h-8 w-8">
       <span> {icon}</span>
     </Button>
   );
