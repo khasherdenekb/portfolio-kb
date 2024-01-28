@@ -4,10 +4,14 @@
 
 <img width="1440" alt="project-overview" src="public/assets/project-overview.png">
 
+## Performance
+
+<img width="1440" alt="project-performance" src="public/assets/performance.png">
+
 ## Technologies Used
 
 - Next.js 14
-- NextUI v2
+- Shadcn-ui
 - Tailwind CSS
 - TypeScript
 - Framer Motion
