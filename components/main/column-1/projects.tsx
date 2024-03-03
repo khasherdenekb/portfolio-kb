@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { FC } from "react";
 import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import Link from "next/link";
 
 type ProjectProps = {
   project: (typeof projectConfig)[number];
@@ -29,17 +30,19 @@ const Projects = () => {
 };
 
 const Project: FC<ProjectProps> = ({ project }) => {
-  const { name, description, image } = project;
+  const { name, description, image, link } = project;
 
   return (
     <div key={name} className="flex gap-6 flex-col">
-      <div className="flex gap-5">
-        <Image src={image} alt={name} width={40} height={40} />
-        <div className="flex flex-col">
-          <p>{name}</p>
-          <p className="text-gray-400">{description}</p>
+      <Link href={link} target="_blank">
+        <div className="flex gap-5">
+          <Image src={image} alt={name} width={40} height={40} />
+          <div className="flex flex-col">
+            <p>{name}</p>
+            <p className="text-gray-400">{description}</p>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

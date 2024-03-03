@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
-import Footer from "@/components/footer/footer";
+import Footer from "@/components/shared/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -47,7 +47,7 @@ export default function RootLayout({
           }}
         >
           <main
-            className="container relative h-full w-full  py-6 mx-auto max-w-[74rem] 2xl:max-w-[84rem]  xs-device 4xl:max-w-[100rem] xs:hidden
+            className="container relative h-full w-full  py-6 mx-auto max-w-[80rem] 2xl:max-w-[88rem] 3xl:max-w-[100rem] 4xl:max-w-[120rem] xs:hidden
           "
           >
             {children}

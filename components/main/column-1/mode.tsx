@@ -1,4 +1,4 @@
-import { ModeToggle } from "@/components/theme/ModeToggle";
+import { ModeToggle } from "@/components/shared/ModeToggle";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 

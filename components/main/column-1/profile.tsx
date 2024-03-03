@@ -20,14 +20,14 @@ export default function Profile() {
         <Separator />
       </CardHeader>
       <CardContent className="justify-end  flex-col">
-        <div className="flex gap-2 ">
-          <Avatar className="w-6 h-6 2xl:h-8 2xl:w-8  4xl:h-10 4xl:w-10 hidden sm:flex">
+        <div className="flex gap-2  items-center 3xl:gap-4">
+          <Avatar className="w-8 h-8 2xl:h-9 2xl:w-9  4xl:h-14 4xl:w-14 hidden sm:flex">
             <AvatarImage src="/assets/profile.jpg" alt="profileImg" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <div className="flex flex-col ">
             <div className="flex items-center gap-[3px]">
-              <p className="text-[11px] md:text-[8.9px] lg:text-[8.5px] 2xl:text-[10px] 3xl:text-[11px] 4xl:text-[15px]">
+              <p className="text-[11px] md:text-[8.9px] lg:text-[8.5px] 2xl:text-[12px] 3xl:text-[14px] 4xl:text-[16px]">
                 {profileConfig?.name}
               </p>
               <Verified className="w-3 h-3 stroke-black fill-yellow-400 2xl:w-4 2xl:h-4" />
