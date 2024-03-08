@@ -1,9 +1,9 @@
 "use client";
-import { workExperienceConfig } from "@/config/main/column-3/column3Config";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { FC } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import { workExperienceConfig } from "@/config/main/siteInfoConfig";
 
 type ExperienceProp = {
   experience: (typeof workExperienceConfig)[number];
@@ -11,7 +11,7 @@ type ExperienceProp = {
 
 const Experiences = () => {
   return (
-    <Card className="small-card flex flex-col justify-between">
+    <Card>
       <CardHeader>
         <p className="small-text">Work experience</p>
         <Separator />

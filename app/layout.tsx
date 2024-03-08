@@ -5,6 +5,7 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import Footer from "@/components/shared/footer";
+import Navbar from "@/components/shared/navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -38,21 +39,25 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={clsx("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+      <body
+        className={clsx(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
         <Providers
           themeProps={{
             attribute: "class",
             defaultTheme: "system",
             enableSystem: true,
+            disableTransitionOnChange: true
           }}
         >
-          <main
-            className="container relative h-full w-full  py-6 mx-auto max-w-[80rem] 2xl:max-w-[88rem] 3xl:max-w-[100rem] 4xl:max-w-[120rem] xs:hidden
-          "
-          >
-            {children}
+          <div className="relative flex min-h-screen flex-col bg-background py-6 md:px-8 md:py-0">
+            <Navbar/>
+            <main className="flex-1 px-7">{children}</main>
             <Footer />
-          </main>
+          </div>
         </Providers>
       </body>
     </html>

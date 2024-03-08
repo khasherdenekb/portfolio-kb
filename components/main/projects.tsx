@@ -1,11 +1,11 @@
 "use client";
-import { projectConfig } from "@/config/main/column-1/column1Config";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { FC } from "react";
 import Image from "next/image";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
+import { projectConfig } from "@/config/main/siteInfoConfig";
 
 type ProjectProps = {
   project: (typeof projectConfig)[number];
@@ -13,7 +13,7 @@ type ProjectProps = {
 
 const Projects = () => {
   return (
-    <Card className="col-span-2 long-card flex justify-between flex-col">
+    <Card>
       <CardHeader>
         <p className="small-text">Projects</p>
         <Separator />

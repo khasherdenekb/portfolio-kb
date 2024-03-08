@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 
 const Mode = () => {
   return (
-    <Card className="col-span-1 small-card">
+    <Card>
       <div>
         <CardHeader>
           <p className="small-text">Mode</p>

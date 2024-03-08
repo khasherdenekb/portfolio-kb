@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { yearsOfExperienceConfig } from "@/config/main/column-3/column3Config";
 import { Separator } from "@/components/ui/separator";
+import { yearsOfExperienceConfig } from "@/config/main/siteInfoConfig";
 
 export default function YearsOfExperience() {
   return (
-    <Card className="col-span-1 small-card">
+    <Card>
       <CardHeader className="flex justify-between w-full ">
         <p className="small-text">Years of experience</p>
         <Separator />

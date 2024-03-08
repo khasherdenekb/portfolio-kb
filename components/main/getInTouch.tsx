@@ -1,10 +1,10 @@
 "use client";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { getInTouchConfig } from "@/config/main/column-2/icons";
 import { FC } from "react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import { getInTouchConfig } from "@/config/main/icons";
 
 type GetInTouchProps = {
   social: (typeof getInTouchConfig)[number];
@@ -12,7 +12,7 @@ type GetInTouchProps = {
 
 const GetInTouch = () => {
   return (
-    <Card className=" small-card">
+    <Card>
       <CardHeader>
         <p className="small-text">Get in touch</p>
         <Separator />
@@ -29,8 +29,17 @@ const GetInTouch = () => {
 const SocialButtons: FC<GetInTouchProps> = ({ social }) => {
   const { icon, link, name } = social;
   return (
-    <Link href={link} target="_blank" key={name} aria-label="social media icon" id={name}>
-      <Button aria-label={name} className="2xl:h-12 2xl:w-12 h-11 w-11 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16">
+    <Link
+      href={link}
+      target="_blank"
+      key={name}
+      aria-label="social media icon"
+      id={name}
+    >
+      <Button
+        aria-label={name}
+        className="2xl:h-12 2xl:w-12 h-11 w-11 3xl:h-14 3xl:w-14 4xl:h-16 4xl:w-16"
+      >
         <span>{icon}</span>
       </Button>
     </Link>

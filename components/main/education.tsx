@@ -1,9 +1,9 @@
 "use client";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { educationConfig } from "@/config/main/column-3/column3Config";
 import { FC } from "react";
 import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { educationConfig } from "@/config/main/siteInfoConfig";
 
 type EducationProp = {
   education: (typeof educationConfig)[number];
@@ -11,7 +11,7 @@ type EducationProp = {
 
 const Educations = () => {
   return (
-    <Card className=" col-span-2  long-card flex flex-col justify-between">
+    <Card>
       <CardHeader>
         <p className="text-[10px] 2xl:text-xs">Educations & Certificates</p>
         <Separator />

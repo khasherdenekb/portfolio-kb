@@ -1,4 +1,6 @@
 import { TbBrandNextjs } from "react-icons/tb";
+import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { SiLinktree } from "react-icons/si";
 import {
   SiBun,
   SiCss3,
@@ -42,4 +44,27 @@ export const stackConfig = [
   { icon: <SiNotion className="2xl:w-5 2xl:h-5 h-4 w-4 3xl:h-10 3xl:w-10" />, name: "Notion" },
   { icon: <SiGmail className="2xl:w-5 2xl:h-5 h-4 w-4 3xl:h-10 3xl:w-10" />, name: "Gmail" },
   { icon: <SiMicrosoftteams className="2xl:w-5 2xl:h-5 h-4 w-4 3xl:h-10 3xl:w-10" />, name: "Microsoft Teams" },
+];
+
+export const getInTouchConfig = [
+  {
+    icon: <GitHubLogoIcon className="h-7 w-7" />,
+    link: "https://github.com/khasherdenekb",
+    name: "github",
+  },
+  {
+    icon: <LinkedInLogoIcon className="h-7 w-7" />,
+    link: "https://linkedin.com/in/khasherdenekb",
+    name: "linkedin",
+  },
+  {
+    icon: <InstagramLogoIcon className="h-7 w-7" />,
+    link: "https://instagram.com/khasherdene.kb",
+    name: "instagram",
+  },
+  {
+    icon: <SiLinktree className="h-7 w-7" />,
+    link: "https://linktr.ee/khasherdene",
+    name: "linktree",
+  },
 ];

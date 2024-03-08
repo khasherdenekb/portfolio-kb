@@ -1,5 +1,5 @@
 "use client";
-import { awardConfig } from "@/config/main/column-2/column2Config";
+import { awardConfig } from "@/config/main/siteInfoConfig";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { FC } from "react";
@@ -11,7 +11,7 @@ type AwardProps = {
 
 const Awards = () => {
   return (
-    <Card className="long-card flex justify-between flex-col">
+    <Card>
       <CardHeader>
         <p className="small-text">Awards</p>
         <Separator />

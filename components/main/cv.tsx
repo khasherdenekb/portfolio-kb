@@ -2,13 +2,13 @@ import React from "react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MoveDown, MoveUpRight } from "lucide-react";
-import { cvConfig } from "@/config/main/column-3/column3Config";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { cvConfig } from "@/config/main/siteInfoConfig";
 
 export default function CV() {
   return (
-    <Card className=" col-span-1 small-card flex flex-col justify-between">
+    <Card >
       <CardHeader>
         <p className="small-text">CV</p>
         <Separator />

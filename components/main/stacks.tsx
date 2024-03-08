@@ -1,6 +1,6 @@
 "use client";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { stackConfig } from "@/config/main/column-1/icons";
+import { stackConfig } from "@/config/main/icons";
 import { FC } from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -12,7 +12,7 @@ type StackProps = {
 
 const Stacks = () => {
   return (
-    <Card className=" col-span-2 small-card flex justify-between flex-col">
+    <Card>
       <CardHeader>
         <p className="small-text">Stacks</p>
         <Separator />
@@ -31,7 +31,7 @@ const Stacks = () => {
 const Stack: FC<StackProps> = ({ stack }) => {
   const { icon, name } = stack;
   return (
-    <Button aria-label={name} key={name} className="relative 2xl:h-11 2xl:w-11 h-8 w-8 ">
+    <Button aria-label={name} key={name} className="relative 2xl:h-11 2xl:w-11 h-9 w-9">
       <span> {icon}</span>
     </Button>
   );

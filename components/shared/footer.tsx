@@ -1,10 +1,11 @@
-import { Separator } from "../ui/separator";
-
 const Footer = () => {
   return (
-    <footer className="pt-5">
-      <Separator />
-      <p className="small-text text-gray-500 pt-4">© 2024 Khash-Erdene Bolor-Erdene. All rights reserved.</p>
+    <footer>
+      <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+        <p className="text-balance text-center text-sm leading-loose text-muted-foreground md:text-left">
+          © 2024 Khash-Erdene Bolor-Erdene. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 };
