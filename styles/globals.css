@@ -57,6 +57,6 @@
     @apply bg-background text-foreground;
   }
   .small-text {
-    @apply 2xl:text-[10px]  text-[12px] md:text-[10px] lg:text-[9px] 3xl:text-[14px] 4xl:text-[16px];
+    @apply text-[11px] 2xl:text-sm;
   }
 }

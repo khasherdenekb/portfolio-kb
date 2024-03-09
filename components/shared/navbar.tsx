@@ -7,11 +7,11 @@ import { profileConfig } from "@/config/main/siteInfoConfig";
 const Navbar = () => {
   return (
     <nav>
-      <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+      <div className="container hidden md:flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
         <div className="flex gap-2  items-center 3xl:gap-4">
           <Avatar>
             <AvatarImage src="/assets/profile.jpg" alt="profileImg" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>KB</AvatarFallback>
           </Avatar>
           <div className="flex flex-col ">
             <div className="flex items-center gap-[3px]">

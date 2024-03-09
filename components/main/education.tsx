@@ -31,7 +31,7 @@ const Education: FC<EducationProp> = ({ education }) => {
   const { year, description, name } = education;
   return (
     <div key={name} className="flex items-start">
-      <p className="text-gray-500 w-[5rem] 4xl:w-[7rem] 3xl:w-[6rem]">{year}</p>
+      <p className="text-gray-500 w-[5rem] 2xl:w-[6.5rem]">{year}</p>
       <div className="flex flex-col">
         <p>{name}</p>
         <p className="text-gray-400">{description}</p>
