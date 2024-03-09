@@ -1,4 +1,3 @@
-import Mode from "@/components/main/mode";
 import Projects from "@/components/main/projects";
 import Stacks from "@/components/main/stacks";
 import About from "@/components/main/about";
