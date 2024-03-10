@@ -18,7 +18,7 @@ const Stacks = () => {
         <Separator />
       </CardHeader>
       <ScrollArea className="h-full">
-        <CardContent className=" gap-5 flex flex-wrap">
+        <CardContent className=" gap-3 flex flex-wrap">
           {stackConfig?.map((stack) => (
             <Stack stack={stack} />
           ))}
@@ -32,7 +32,7 @@ const Stack: FC<StackProps> = ({ stack }) => {
   const { icon, name } = stack;
   return (
     <Button aria-label={name} key={name} className="relative 2xl:h-11 2xl:w-11 h-9 w-9">
-      <span> {icon}</span>
+      <span>{icon}</span>
     </Button>
   );
 };

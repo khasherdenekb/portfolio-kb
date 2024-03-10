@@ -20,7 +20,7 @@ const Navbar = () => {
               </p>
               <Verified className="w-3 h-3 stroke-black fill-yellow-400 2xl:w-4 2xl:h-4" />
             </div>
-            <p className="small-text 3xl:text-[10px] 4xl:text-[14px]">{profileConfig?.profession}</p>
+            <p className="small-text">{profileConfig?.profession}</p>
           </div>
         </div>
         <ModeToggle/>
