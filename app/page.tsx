@@ -9,7 +9,6 @@ import Experiences from "@/components/main/experience";
 import YearsOfExperience from "@/components/main/yearsOfExperience";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/shared/header";
-import { Outro } from "@/components/shared/Outro";
 
 const Container = ({
   className,
@@ -67,7 +66,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Outro />
     </div>
   );
 };
