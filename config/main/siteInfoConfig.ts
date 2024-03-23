@@ -2,7 +2,8 @@ export const awardConfig = [
   {
     year: "2023",
     name: "Mandal asset hackathon dilemma game - 4th place",
-    description: "The second team hackathon we try to focus on the improve performance and ability.",
+    description:
+      "The second team hackathon we try to focus on the improve performance and ability.",
   },
   {
     year: "2023",
@@ -19,7 +20,8 @@ export const awardConfig = [
   {
     year: "2023",
     name: "Mandakh university IT olympiad - 4th place",
-    description: "I achieved 4th place in the Mandakh university Information technology olympiad",
+    description:
+      "I achieved 4th place in the Mandakh university Information technology olympiad",
   },
 ];
 

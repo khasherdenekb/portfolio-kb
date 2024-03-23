@@ -1,5 +1,9 @@
 import { TbBrandNextjs } from "react-icons/tb";
-import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 import { SiLinktree } from "react-icons/si";
 import {
   SiBun,

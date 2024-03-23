@@ -11,7 +11,9 @@ export default function YearsOfExperience() {
         <Separator />
       </CardHeader>
       <CardContent className="flex justify-center items-center h-[60%] ">
-        <p className="text-8xl 4xl:text-[7rem]">{yearsOfExperienceConfig.year}</p>
+        <p className="text-8xl 4xl:text-[7rem]">
+          {yearsOfExperienceConfig.year}
+        </p>
       </CardContent>
     </Card>
   );

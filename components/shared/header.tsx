@@ -8,9 +8,7 @@ export function Header() {
       <h1 className="md:text-5xl lg:text-[5rem] text-3xl font-bold text-center text-white relative z-20">
         Software Engineer X Developer
       </h1>
-      {/* <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-white relative z-20 text-center">
-        Software Engineer X Developer
-      </h1> */}
+
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
