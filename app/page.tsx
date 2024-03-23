@@ -29,8 +29,8 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-5">
       <Header />
-      <div className="rounded-[0.5rem] border shadow-md md:shadow-xl container relative">
-        <div className="hidden items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
+      <div className="rounded-[0.5rem] border shadow-sm container relative">
+        <div className="hidden items-start justify-center gap-6 rounded-lg py-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
           <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
             <Container>
               <Projects />
