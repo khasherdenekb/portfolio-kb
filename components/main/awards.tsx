@@ -16,7 +16,7 @@ const Awards = () => {
         <p className="small-text">Awards</p>
         <Separator />
       </CardHeader>
-      <ScrollArea className="h-full">
+      <ScrollArea className="h-full 2xl:h-[300px]">
         <CardContent className="small-text py-5 flex flex-col justify-end leading-normal gap-3">
           {awardConfig?.map((award) => (
             <Award award={award} />

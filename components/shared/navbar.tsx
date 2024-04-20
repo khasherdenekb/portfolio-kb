@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Verified } from "lucide-react";
-import { ModeToggle } from "./ModeToggle";
+import { ModeToggle } from "./mode-toggle";
 import { profileConfig } from "@/config/main/siteInfoConfig";
 
 const Navbar = () => {

@@ -10,7 +10,7 @@ const About = () => {
         <p className="small-text">About</p>
         <Separator />
       </CardHeader>
-      <ScrollArea className="h-full">
+      <ScrollArea className="h-full 2xl:h-[300px]">
         <CardContent className="small-text flex flex-col justify-end leading-normal">
           {aboutConfig?.description}
         </CardContent>

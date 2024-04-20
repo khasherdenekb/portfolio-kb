@@ -50,12 +50,14 @@ export default function RootLayout({
             attribute: "class",
             defaultTheme: "system",
             enableSystem: true,
-            disableTransitionOnChange: true
+            disableTransitionOnChange: true,
           }}
         >
           <div className="relative flex min-h-screen flex-col bg-background py-6 md:px-8 md:py-0">
-            <Navbar/>
-            <main className="hidden md:flex md:flex-1 px-7 container">{children}</main>
+            <Navbar />
+            <main className="hidden md:flex md:flex-1 px-7 container">
+              {children}
+            </main>
             <Footer />
           </div>
         </Providers>

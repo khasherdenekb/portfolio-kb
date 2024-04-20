@@ -32,16 +32,16 @@ export const aboutConfig = {
 
 export const projectConfig = [
   {
-    image: "/assets/alterz-logo.png",
-    name: "AlterZ-ai",
+    image: "/logo.jpg",
+    name: "DEMO",
     description: "SaaS based ai toolkit",
-    link: "https://alterz-ai.vercel.app",
+    link: "#",
   },
   {
     image: "/logo.jpg",
-    name: "Meta728",
+    name: "DEMO",
     description: "Ecommerce website",
-    link: "/",
+    link: "#",
   },
 ];
 

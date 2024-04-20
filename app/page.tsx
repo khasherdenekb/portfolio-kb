@@ -2,11 +2,11 @@ import Projects from "@/components/main/projects";
 import Stacks from "@/components/main/stacks";
 import About from "@/components/main/about";
 import Awards from "@/components/main/awards";
-import GetInTouch from "@/components/main/getInTouch";
+import GetInTouch from "@/components/main/get-in-touch";
 import CV from "@/components/main/cv";
 import Educations from "@/components/main/education";
 import Experiences from "@/components/main/experience";
-import YearsOfExperience from "@/components/main/yearsOfExperience";
+import YearsOfExperience from "@/components/main/years-of-experience";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/shared/header";
 
